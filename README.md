@@ -18,7 +18,7 @@ NOTE: if you use interrupt mode, you should read TILT register to reset interrup
     
     uint_8 axesBuffer[3] = { 0x00, 0x00, 0x00 };
     MMA7660_Init();
-    while(True) {
+    while(1) {
         MMA7660_readAxes(axesBuffer);
         // processing...
     }
