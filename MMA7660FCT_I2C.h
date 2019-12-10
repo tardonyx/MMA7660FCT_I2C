@@ -55,17 +55,3 @@ void MMA7660_Init(void);
 void MMA7660_readAxes(int_8 *buffer);
 
 #endif /* MMA7660FCT_I2C_H_ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
