@@ -1,6 +1,6 @@
 # MMA4660FCT_I2C #
 
-## Discription ##
+## Description ##
 
 Basic communication library via I2C bus with MMA7660 accelerometer.
 
