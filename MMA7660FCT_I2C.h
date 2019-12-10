@@ -1,3 +1,13 @@
+/*******************************************************************************************************
+ 
+     * File:                MMA7660FCT_I2C.c
+     * Description:         Header for the MMA7660FCT_I2C.c
+     * Created:             17 oct 2019
+     * Author:              Andrey Bibea
+     * Email:               andreybibea@gmail.com
+
+********************************************************************************************************/
+
 #include "USCI_I2C.h"
 
 #ifndef MMA7660FCT_I2C_H_
@@ -32,29 +42,17 @@ typedef   signed char  int_8;
 
 int_8 axesData[3];
 
-// Write <data> byte to <reg> register
 void MMA7660_writeReg(uint_8 reg, uint_8 data);
 
-// Read and return data from <reg> register
 uint_8 MMA7660_readReg(uint_8 reg);
 
-// Set MODE register with params defined in MODE struct
 void MMA7660_setMODE(uint_8 params);
 
-// Set INTSU register with params defined in INTSU struct
 void MMA7660_setINTSU(uint_8 params);
 
-// Initialization of MMA7660
 void MMA7660_Init(void);
 
-// reads axes data to <buffer> array (its size must be at least 3 bytes)
 void MMA7660_readAxes(int_8 *buffer);
-
-// check, is a operator falls
-uint_8 MMA7660_isFall(void);
-
-// test function with infinite loop
-void MMA7660_test(void);
 
 #endif /* MMA7660FCT_I2C_H_ */
 
